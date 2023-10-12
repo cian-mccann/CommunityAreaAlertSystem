@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Not Verified</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }                           
+        @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }                                    
+        @viewport { user-zoom: fixed ; }
+    </style>
+
+    <link rel="stylesheet" href="css/notVerified.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+    <script src="xhr.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="cordova.js"></script>
+    <script src="intelxdk.js"></script> 
+    <script src="js/init-app.js"></script> 
+    <script src="xdk/init-dev.js"></script>
+    <script src="lib/sweet-alert.min.js"></script>
+    <script src="js/notVerified.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>getAccountValues()</script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        <span></span>
+        <div id="header_text"> Account Verification </div> 
+    </div>
+    <div id="inner_body">
+        <div id="verify1">
+            <h2>Your Address Has Not Been Verified Yet</h2>
+                <p>If you sent an image for veification you will recive an notification soon. 
+                </p>
+        </div>
+        </div>
+        
+        <div id="verify2">
+            <h2>Send New Request</h2>
+                <p>Click the button below to send/resend your verification request. 
+                <br>Please use a different document or take a clearer photo.
+                </p>
+        </div>
+    
+    
+        <div id="image_btn_container" style="padding-bottom:0px;">
+        <input type="button" value="Send Request" 
+                   id="captureBtn" onclick="nextPage()" style="margin-right:-16px;"></input>
+        
+        <div>
+            <h2>Note</h2>
+                <p>It may take 1 to 2 working days to verify your address. 
+                </p>
+        </div>    
+    </div>
+</body>
+</html>

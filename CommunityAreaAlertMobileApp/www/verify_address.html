@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Address</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }                           
+        @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }                                    
+        @viewport { user-zoom: fixed ; }
+    </style>
+
+    <link rel="stylesheet" href="css/verify_address.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+    <script src="xhr.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="cordova.js"></script>
+    <script src="intelxdk.js"></script> 
+    <script src="js/init-app.js"></script> 
+    <script src="xdk/init-dev.js"></script>
+    <script src="js/verify_address.js"></script>
+    <script src="js/common_sign_up.js"></script>
+    <script src="lib/sweet-alert.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        <span></span>
+        <div id="header_text"> Account Verification </div> 
+    </div>
+    <div id="inner_body">
+        <script>infoCorrectMessage();</script>
+        <div id="verify1">
+            <h2>Option 1</h2>
+                <p>You can now capture an image of the document such as your driving licence or passport. 
+                <br>It will then automatically be sent for verification along with your previously entered address.
+                </p>
+        </div>
+      
+        <div id="image_btn_container" style="padding-bottom:0px;">
+            <input type="button" value="Capture Image" 
+                   id="captureBtn" onclick="captureCamera();" style="margin-right:-16px;"></input>
+            <button id="uploadBtn" onclick="uploadForVefification();"
+                    style="visibility:hidden;width:0px;height:0px">Submit Image</button>
+        </div>
+        <div id="captured_image_container">
+            <img src="" id="captured_image" style="visibility:hidden; height:0px;"/>
+        </div>
+        
+        <div id="verify2">
+            <h2>Option 2</h2>
+                <p>You can manually email an image or a scanned copy of your vefification document. 
+                <br>Send email to:<br>communityalert@gmail.com
+                <br>Attach or link to a document which contains your name and address.
+                <br>Please ensure to include your username in the email.
+                </p>
+        </div>
+        
+        <div>
+            <h2>Note</h2>
+                <p>You can verify your address at any time by logging in using your username and password.
+                <br>You will automatically be returned to this page. 
+                </p>
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }                           
+        @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }                                    
+        @viewport { user-zoom: fixed ; }
+    </style>
+
+    <link rel="stylesheet" href="css/sign_up2.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+    <script src="xhr.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="cordova.js"></script>
+    <script src="intelxdk.js"></script> 
+    <script src="js/sign_up2.js"></script>
+    <script src="js/init-app.js"></script> 
+    <script src="xdk/init-dev.js"></script> 
+    <script src="js/common_sign_up.js"></script>
+    <script src="lib/sweet-alert.min.js"></script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        <div id="header_text"> Step 2 of 3 </div> 
+    </div>
+    
+    <div id="inner_body">
+    <script>infoCorrectMessage();</script>
+        <h1>Date of Birth <br>(dd/mm/yyyy):</h1>   
+            <input id="dob_input" type ="text" placeholder="01/01/2000" pattern="\d{1,2}/\d{1,2}/\d{4}">
+        <div style="text-align:center;">
+            <a onclick="return checkDateOfBirth();">
+                <button id="next_btn"><b>Next</b></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

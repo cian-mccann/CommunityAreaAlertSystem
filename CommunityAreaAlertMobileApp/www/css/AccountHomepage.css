@@ -1,0 +1,127 @@
+.content 
+{
+    display: none;   
+}
+
+.edit_pic
+{
+    float: right; 
+    height: 4.3em;
+    margin-right: 4px;  
+}
+
+.innerDiv
+{
+    background-color: initial;
+    margin-top: 1%;
+}
+
+body 
+{
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none; 
+    -ms-text-size-adjust: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
+    -ms-touch-action: pan-y;
+    -ms-content-zooming: none;
+    color: black;
+    background-color: #FAFAFA;
+    height: 100%;
+    user-select: none;
+}
+
+html 
+{
+    -ms-touch-action: pan-x;
+    position: relative;
+    height: 100%;
+}
+
+input, textarea  {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#header
+{
+    background-color: #00B0FF;
+    color: white;
+    height: 4em;
+    text-align: center;
+    width: 100%;
+}
+
+#header_text
+{
+    display:inline-block; 
+    font-size: xx-large;
+    font-family: font-family: Verdana,Arial,Helvetica,sans-serif;   
+    margin-top: .15em;
+    vertical-align:middle;
+}
+
+#home_logo
+{
+    border-left: 1em solid #FAFAFA;
+    border-right: 1em solid #FAFAFA;
+    border-top: .5em solid #FAFAFA;
+    border-bottom: .5em solid #FAFAFA;
+    float: left;
+    height: 3em;
+    position: relative;
+}
+
+#inner_body
+{
+    height:80%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#logo
+{
+    border-left: 1em solid #00B0FF;
+    border-right: 1em solid #00B0FF;
+    border-top: .5em solid #00B0FF;
+    border-bottom: .5em solid #00B0FF;
+    float: left;
+    height: 3em;
+    position: relative;
+}
+
+#mainDiv
+{
+    height: 22em;
+    margin-top: 1%;
+    width: 100%;
+}
+
+#preferences_logo
+{
+    bottom: 0;
+    float: left;
+    height: 4em;
+    position: relative;
+}
+
+#refresh_logo
+{
+    float: right;
+    height: 3em;
+    margin: .5em;
+    position: relative;
+}
+
+#seperator
+{
+    float: left;
+    height: 4em;
+    position: relative;
+}
