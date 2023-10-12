@@ -1,0 +1,17 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "org.apache.cordova.file": {},
+        "org.apache.cordova.device": {},
+        "org.apache.cordova.splashscreen": {},
+        "org.apache.cordova.camera": {},
+        "org.apache.cordova.geolocation": {}
+    },
+    "dependent_plugins": {}
+}
