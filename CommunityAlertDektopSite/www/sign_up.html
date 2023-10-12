@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweetAlert/lib/sweet-alert.css">
+    
+    <script src="js/sign_up.js"></script>
+    <script src="js/common_sign_up.js"></script>
+    <script src="lib/sweetAlert/lib/sweet-alert.js"></script>
+</head>
+
+<body style="margin:0px">
+    
+    <div id="header">
+        <div id="header_text"> Step 1 of 3 </div> 
+    </div>
+    
+    <div id="inner_body">
+        <h1>Create Station Username</h1>   
+            <input id="username_input" type ="text" placeholder="4 - 20 Charachters" pattern=".{4,20}">
+        
+        <h1>Password</h1>   
+            <input id="password_input" type ="password" placeholder="4 - 15 Charachters" pattern=".{4,15}">
+
+        <h1>Re-Type Password</h1>   
+            <input id="password_input2" type ="password" placeholder="Match previous" pattern=".{4,15}">
+
+        <div style="text-align:center;">
+            <a onclick="return checkSignUpValues();">
+                <button  id="attempt_sign_in"><b>Next</b></button>
+            </a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

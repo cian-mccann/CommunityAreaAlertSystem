@@ -1,0 +1,56 @@
+html 
+{
+    height: 100%;
+}
+
+body 
+{
+    background-color: #FAFAFA;
+    color: black ;
+    height: 100%;
+}
+
+h2 
+{ 
+    font-family: font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+#header
+{
+    background-color: #00B0FF;
+    color: white;
+    height: 3.25em;
+    margin-bottom: 4px;
+    text-align: center;
+    width: 100%;
+}
+
+#header_text
+{
+    display:inline-block; 
+    font-size: xx-large;
+    font-family: font-family: Verdana,Arial,Helvetica,sans-serif;
+    margin-top: .15em;
+    vertical-align:middle;   
+}
+
+#inner_body
+{
+    margin: 5px;
+    height: 89%;
+}
+
+#map-canvas 
+{
+    background-color: #CCC;
+    height: 65%;
+    width: 100%;
+}
+
+#next_btn
+{
+    font-size: 1.5em;
+    height: 13vh;
+    margin-top: 5%;
+    width: 50%;
+}

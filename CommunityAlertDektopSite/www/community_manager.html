@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Manager</title>
+    <link rel="stylesheet" href="css/community_manager.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweetAlert/lib/sweet-alert.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/community_manager.js"></script> 
+    <script src="lib/sweetAlert/lib/sweet-alert.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        
+        <img id="phone_pic" src="images/phone.png">
+        <div id="phone">
+        </div> 
+        
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 20%;"></img>
+    
+        <div onclick="logout()" id="logout">
+            Logout
+        </div>
+        <img onclick="logout()" id="logout_pic" src="images/logout.png">
+    
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+        
+        <div id="account">
+            Account
+        </div>
+        <img id="account_pic" src="images/account.png">
+        
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+
+        <div id="logout" onclick="openCommunityManager()">
+            Communities
+        </div>
+        <img id="account_pic" src="images/menu.png" onclick="openCommunityManager()">
+
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+    
+    </div>
+
+    <div id="menu_bar">
+        <img id="gardaLogo" onclick="openHomepage()" src="images/garda.png"></img>
+
+        <div id="menu_box" style="margin-right: 20%; clear: right;"  onclick="verifyUserPage()">
+            <span></span>
+            Verify User
+        </div>
+        <div id="menu_box" onclick="editReportPage()">
+            <span></span>
+            Edit Report
+        </div>
+        <div id="menu_box" onclick="newReportPage()">
+            <span></span>
+            New Report
+        </div>
+    </div>
+
+    <div id="inner_body">
+        <h1>Community Manager</h1>
+        <div id="newCommunity">
+            <img id="newCommunityExpandLogo" src="images/c_triangle.png"></img>
+            <h2 style="text-align: left;">Create New Community</h2>
+        </div>
+        <div id="newCommunityContent" style="width:100%; height:50%;">
+            <h2 id="inputHeading" style="text-align:left;font-weight:bold; float: left;">Enter name of community:</h2>
+            <h2 style="float: right; margin-right:25%; font-weight:bold;">Location of Community:</h2>
+            <input id="nameInput" type ="text" placeholder="Name">
+            <button onclick="checkValidInput()" id="createBtn"><b>Create Community</b></button>
+            <div id="map-canvas"></div>
+        </div>
+
+        <div style="clear:both;">
+        <div id="addMember">
+            <img id="addMemberToCommunityLogo" src="images/e_triangle.png"></img>
+            <h2 style="text-align: left;">Add Member to Community</h2>
+        </div>
+
+        <div style="clear:both;">
+        <div id="editCommunity">
+            <img id="editCommunityLogo" src="images/e_triangle.png"></img>
+            <h2 style="text-align: left;">Edit Community</h2>
+        </div>
+    </div>
+</body>
+<script>getAccountValues();</script>
+<script>updateHomePageToUserValues();</script>
+</html>

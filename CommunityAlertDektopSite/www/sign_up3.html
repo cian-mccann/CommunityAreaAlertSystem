@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="css/sign_up3.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweetAlert/lib/sweet-alert.css">
+    
+    <script src="js/sign_up3.js"></script>
+    <script src="js/common_sign_up.js"></script>
+    <script src="lib/sweetAlert/lib/sweet-alert.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        <span></span>
+        <div id="header_text"> Step 3 of 3 </div> 
+    </div>
+    
+    <div id="inner_body">
+    <script>infoCorrectMessage();</script>
+        <div id="map-canvas"></div>
+        <div style="text-align:center;">
+            <button onclick="confirmAddress()" id="next_btn"><b>Confirm Address</b></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "project": {
+    "projectSettingsVersion": "1.2",
+    "currentBuildConfiguration": "WebApp",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "currentService": {
+      "endPoint": "Pushmobi",
+      "service": "appmobi"
+    },
+    "initialAutoPluginCount": 0
+  }
+}

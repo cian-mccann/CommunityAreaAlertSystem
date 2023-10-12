@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign_up2.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweetAlert/lib/sweet-alert.css">
+    
+    <script src="js/sign_up2.js"></script>
+    <script src="js/common_sign_up.js"></script>
+    <script src="lib/sweetAlert/lib/sweet-alert.js"></script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        <div id="header_text"> Step 2 of 3 </div> 
+    </div>
+    
+    <div id="inner_body">
+    <script>infoCorrectMessage();</script>
+        <h1>Station Phone Number</h1>   
+            <input id="number_input" type ="text" placeholder="Enter the phone number of your station."
+                   pattern="|^\s*\(?\s*\d{1,4}\s*\)?\s*[\d\s]{5,10}\s*$|">
+        <div style="text-align:center;">
+            <a onclick="return checkFormValid();">
+                <button id="next_btn"><b>Next</b></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

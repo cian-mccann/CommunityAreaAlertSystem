@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Report</title>
+
+    <link rel="stylesheet" href="css/new_report.css">
+    <link rel="stylesheet" type="text/css" href="lib/sweetAlert/lib/sweet-alert.css">
+    
+    <script src="js/new_report.js"></script>  
+    <script src="lib/sweetAlert/lib/sweet-alert.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> 
+    <script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+</head>
+
+<body style="margin:0px">
+    <div id="header">
+        
+        <img id="phone_pic" src="images/phone.png">
+        <div id="phone">
+        </div> 
+        
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 20%;"></img>
+    
+        <div onclick="logout()" id="logout">
+            Logout
+        </div>
+        <img onclick="logout()" id="logout_pic" src="images/logout.png">
+    
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+        
+        <div id="account">
+            Account
+        </div>
+        <img id="account_pic" src="images/account.png">
+        
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+
+        <div id="logout" onclick="openCommunityManager()">
+            Communities
+        </div>
+        <img id="account_pic" src="images/menu.png" onclick="openCommunityManager()">
+
+        <img id="seperator" src="images/seperator.jpg" style="margin-right: 4px;"></img>
+    
+    </div>
+
+    <div id="menu_bar">
+        <img id="gardaLogo" onclick="openHomepage()" src="images/garda.png"></img>
+
+        <div id="menu_box" style="margin-right: 20%; clear: right;"  onclick="verifyUserPage()">
+            <span></span>
+            Verify User
+        </div>
+
+        <div id="menu_box" onclick="editReportPage()">
+            <span></span>
+            Edit Report
+        </div>
+
+        <div id="menu_box" onclick="newReportPage()">
+            <span></span>
+            New Report
+        </div>
+
+    </div>
+
+    <div id="inner_body">
+        <h2 style="float: left; margin-top: 1.5%;">1. Select Location</h2>
+        
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+        
+        <h2 style="float: right; margin-right:24%;">3. Report Description</h2>
+        
+        <input id="report_title" type ="text" placeholder="Report Title">
+        <textarea rows="12" cols="45" id="report_description" type ="text" placeholder="Report Description"></textarea>
+        <div id="map-canvas"></div>
+        
+        <h2>2. Communities</h2>
+        
+        <div id="mainContainer" class="communityListContainer">
+        </div>
+        
+        <div>
+            <button onclick="confirmAlert()" id="sendBtn"><b>Send Alert</b></button>
+        </div>
+        
+    </div>
+</body>
+
+<script>getAccountValues();</script>
+<script>updateHomePageToUserValues();</script>
+
+</html>
